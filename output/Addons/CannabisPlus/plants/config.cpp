@@ -94,12 +94,143 @@ class CfgHorticulture
 };
 class CfgVehicles
 {
-	class PlantBase;
+	class Inventory_Base;
+	class PlantBase: Inventory_Base
+	{
+		storageCategory=1;
+		lootCategory="Crafted";
+		plantType="";
+		plantTypeMultiplier="";
+		hiddenSelections[]=
+		{
+			"infestedParts"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			""
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			""
+		};
+		inventorySlot[]=
+		{
+			"SeedBase_1",
+			"SeedBase_2",
+			"SeedBase_3",
+			"SeedBase_4",
+			"SeedBase_5",
+			"SeedBase_6",
+			"SeedBase_7",
+			"SeedBase_8",
+			"SeedBase_9",
+			"SeedBase_10",
+			"SeedBase_11",
+			"SeedBase_12",
+			"SeedBase_13"
+		};
+		class AnimationSources
+		{
+			class pile_01
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class pile_02
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class plantStage_01
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class plantStage_01_crops
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class plantStage_02
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class plantStage_02_crops
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class plantStage_03
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class plantStage_03_crops
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class plantStage_04
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class plantStage_04_crops
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class plantStage_05
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class plantStage_05_crops
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class plantStage_06
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class plantStage_06_crops
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+			class stake
+			{
+				source="user";
+				animPeriod=0.0099999998;
+				initPhase=1;
+			};
+		};
+	};
+
 	class CP_Plant_CannabisSkunk: PlantBase
 	{
 		scope=2;
 		displayName="Skunk Plant";
 		descriptionShort="A Skunk plant.";
+		plantType="Skunk";
+		plantTypeMultiplier=2;
 		model="DZ\gear\cultivation\Cannabis_plant.p3d";
 		hiddenSelections[]=
 		{

@@ -9,3 +9,8 @@ class CP_Plant_CannabisNomad : PlantBase {};
 class CP_Plant_CannabisBlackFrost : PlantBase {};
 
 class CP_Plant_Tobacco : PlantBase {};
+
+modded class Plant_Pepper : PlantBase {};
+modded class Plant_Tomato : PlantBase {};
+modded class Plant_Zucchini : PlantBase {};
+modded class Plant_Pumpkin : PlantBase {};

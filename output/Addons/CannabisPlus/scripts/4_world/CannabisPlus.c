@@ -7,206 +7,13 @@ class CP_CoreClass extends ItemBase
     };
 }
 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-modded class CP_Plant_CannabisSkunk
-{	
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	// 
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	override void Harvest( PlayerBase player )
-	{
-		super.Harvest(player);
-		if(GetGame().IsServer() && GetCPConfig().removeAfterHarvest==true){
-			GetGame().GetCallQueue( CALL_CATEGORY_SYSTEM ).CallLater( RemovePlant, 10, true );
-		}
-	}
-}
-
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-modded class CP_Plant_CannabisBlue
-{
-	override void Harvest( PlayerBase player )
-	{
-		super.Harvest(player);
-		if(GetGame().IsServer() && GetCPConfig().removeAfterHarvest==true){
-			GetGame().GetCallQueue( CALL_CATEGORY_SYSTEM ).CallLater( RemovePlant, 10, true );
-		}
-	}
-}
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-modded class CP_Plant_CannabisKush
-{
-	override void Harvest( PlayerBase player )
-	{
-		super.Harvest(player);
-		if(GetGame().IsServer() && GetCPConfig().removeAfterHarvest==true){
-			GetGame().GetCallQueue( CALL_CATEGORY_SYSTEM ).CallLater( RemovePlant, 10, true );
-		}
-	}
-}
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// NEXT UPDATE
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/* 
- * Stardawg strain 
- */
-modded class CP_Plant_CannabisStardawg
-{
-	override void Harvest( PlayerBase player )
-	{
-		super.Harvest(player);
-		if(GetGame().IsServer() && GetCPConfig().removeAfterHarvest==true){
-			GetGame().GetCallQueue( CALL_CATEGORY_SYSTEM ).CallLater( RemovePlant, 10, true );
-		}
-	}
-}
-
-
-/* 
- * Future strain 
- */
-modded class CP_Plant_CannabisFuture {
-	override void Harvest(PlayerBase player) {
-		super.Harvest(player);
-		if(GetGame().IsServer() && GetCPConfig().removeAfterHarvest==true){
-			GetGame().GetCallQueue( CALL_CATEGORY_SYSTEM ).CallLater( RemovePlant, 10, true );
-		}
-	}
-}
-
-/*
- * S1 strain
- */
-
-modded class CP_Plant_CannabisS1 {
-	override void Harvest(PlayerBase player) {
-		super.Harvest(player);
-		if(GetGame().IsServer() && GetCPConfig().removeAfterHarvest==true){
-			GetGame().GetCallQueue( CALL_CATEGORY_SYSTEM ).CallLater( RemovePlant, 10, true );
-		}
-	}
-}
-
-/*
- * Nomad strain
- */
-
-modded class CP_Plant_CannabisNomad {
-	override void Harvest(PlayerBase player) {
-		super.Harvest(player);
-		if(GetGame().IsServer() && GetCPConfig().removeAfterHarvest==true){
-			GetGame().GetCallQueue( CALL_CATEGORY_SYSTEM ).CallLater( RemovePlant, 10, true );
-		}
-	}
-}
-
-/*
- * 
- *  BlackFrost
- */
-
-modded class CP_Plant_CannabisBlackFrost {
-	override void Harvest(PlayerBase player) {
-		super.Harvest(player);
-		if(GetGame().IsServer() && GetCPConfig().removeAfterHarvest==true){
-			GetGame().GetCallQueue( CALL_CATEGORY_SYSTEM ).CallLater( RemovePlant, 10, true );
-		}
-	}
-}
-
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-modded class CP_Plant_Tobacco
-{
-	override void Harvest( PlayerBase player )
-	{
-		super.Harvest(player);
-		if(GetGame().IsServer() && GetCPConfig().removeAfterHarvest==true){
-			GetGame().GetCallQueue( CALL_CATEGORY_SYSTEM ).CallLater( RemovePlant, 10, true );
-		}
-	}
-}
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-modded class Plant_Pepper
-{
-	override void Harvest( PlayerBase player )
-	{
-		super.Harvest(player);
-		if(GetGame().IsServer() && GetCPConfig().removeAfterHarvest==true){
-			GetGame().GetCallQueue( CALL_CATEGORY_SYSTEM ).CallLater( RemovePlant, 10, true );
-		}
-	}
-}
-
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-modded class Plant_Tomato
-{
-	override void Harvest( PlayerBase player )
-	{
-		super.Harvest(player);
-		if(GetGame().IsServer() && GetCPConfig().removeAfterHarvest==true){
-			GetGame().GetCallQueue( CALL_CATEGORY_SYSTEM ).CallLater( RemovePlant, 10, true );
-		}
-	}
-}
-
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-modded class Plant_Zucchini
-{
-	override void Harvest( PlayerBase player )
-	{
-		super.Harvest(player);
-		if(GetGame().IsServer() && GetCPConfig().removeAfterHarvest==true){
-			GetGame().GetCallQueue( CALL_CATEGORY_SYSTEM ).CallLater( RemovePlant, 10, true );
-		}
-	}
-}
-
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-modded class Plant_Pumpkin
-{
-	override void Harvest( PlayerBase player )
-	{
-		super.Harvest(player);
-		if(GetGame().IsServer() && GetCPConfig().removeAfterHarvest==true){
-			GetGame().GetCallQueue( CALL_CATEGORY_SYSTEM ).CallLater( RemovePlant, 10, true );
-		}
-	}
-}
-
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 modded class PlantBase
 {	
+
 	private int m_growtime;
 	
 	private int m_tabacco_growtime;
-	private int m_cannabisSkunk_growtime; 
+	//private int m_cannabisSkunk_growtime; 
 	private int m_cannabisKush_growtime;
 	private int m_cannabisBlue_growtime;
 	private int m_cannabisStardawg_growtime;
@@ -214,6 +21,7 @@ modded class PlantBase
 	private int m_cannabisS1_growtime;
 	private int m_cannabisNomad_growtime;
 	private int m_cannabisBlackFrost_growtime;
+
 
 	private int m_pepper_growtime;
 	private int m_tomato_growtime;
@@ -241,9 +49,40 @@ modded class PlantBase
 	private PluginHorticulture m_ModuleHorticulture;
 	private int currentYield;
 	
+	protected string m_plantType="";
+	protected float m_plantTypeMultiplier=1;
+
+    int GetGrowTime()
+	{
+		if (m_plantType == "Skunk")
+        {
+			return GetCPConfig().cannabisSkunk_growtime;
+		}
+		return 1;
+    }
+
 	void PlantBase()
 	{
-		
+		if ( ConfigIsExisting("plantType") ) 
+		{
+            m_plantType= ConfigGetString("plantType");
+			Print("plantType Check=" + m_plantType )
+        }
+		else
+		{
+            m_plantType= "";
+        }
+
+		if ( ConfigIsExisting("plantTypeMultiplier") ) 
+		{
+            m_plantTypeMultiplier= ConfigGetInt("plantTypeMultiplier");
+			Print("plantTypeMultiplier Check=" + m_plantTypeMultiplier )
+        }
+		else
+		{
+            m_plantTypeMultiplier= 1;
+        }
+
 		string plant_type = this.GetType();
 		
 		m_ModuleHorticulture 	= PluginHorticulture.Cast( GetPlugin( PluginHorticulture ) );		
@@ -275,9 +114,7 @@ modded class PlantBase
 	}
 	
 	
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	// 
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 	override void Init( GardenBase garden_base, float fertility, float harvesting_efficiency, float water)
 	{	
 		private bool isFertilized = false;
@@ -285,7 +122,7 @@ modded class PlantBase
 		
 		//reads settings from CannabisPlus.json
 		m_tabacco_growtime 				= GetCPConfig().tobacco_growtime;
-		m_cannabisSkunk_growtime 		= GetCPConfig().cannabisSkunk_growtime;
+		//m_cannabisSkunk_growtime 		= GetCPConfig().cannabisSkunk_growtime;
 		m_cannabisKush_growtime 		= GetCPConfig().cannabisKush_growtime;
 		m_cannabisBlue_growtime	 		= GetCPConfig().cannabisBlue_growtime;
 		m_cannabisStardawg_growtime		= GetCPConfig().cannabisStardawg_growtime;
@@ -325,10 +162,12 @@ modded class PlantBase
 		switch(this.GetType()){
 		    // cannabis skunk
 			case "CP_Plant_CannabisSkunk":
-				m_growtime = m_cannabisSkunk_growtime;
+				m_growtime = (GetGrowTime())*m_plantTypeMultiplier;
 				currentYield = m_cannabisSkunk_cropcount;
 				m_CropsCount = 1;
 				IncreaseCrop = false;
+				Print("Growtime is " + GetGrowTime() );
+				Print("Multiplier is " + m_plantTypeMultiplier );
 				break;
 			// cannabis blue
 			case "CP_Plant_CannabisBlue":
@@ -473,9 +312,7 @@ modded class PlantBase
 	}
 	
 	
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	// 
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 	override bool OnStoreLoad( ParamsReadContext ctx, int version )
 	{
 		if ( !super.OnStoreLoad( ctx, version ) )
@@ -487,9 +324,7 @@ modded class PlantBase
 	}
 	
 		
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	// 
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 	override void OnStoreSave( ParamsWriteContext ctx )
 	{
 		// call the inherited class
@@ -503,12 +338,11 @@ modded class PlantBase
 	private bool harvestingSpamCheck = false;
 	
 	
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	// 
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 	override void Harvest( PlayerBase player )
 	{
-		if(harvestingSpamCheck==false && m_HasCrops==true){
+		if(harvestingSpamCheck==false && m_HasCrops==true)
+		{
 			harvestingSpamCheck = true;
 			for ( int i = 0; i < m_CropsCount; i++ )
 			{
@@ -612,22 +446,22 @@ modded class PlantBase
 			m_HasCrops = false;
 			SetSynchDirty();
 			UpdatePlant();
-			GetGame().GetCallQueue( CALL_CATEGORY_SYSTEM ).CallLater( clearSpamCheck, 5000, true );
+			GetGame().GetCallQueue( CALL_CATEGORY_SYSTEM ).CallLater( clearSpamCheck, 5000, true );	
+		}
+
+		if(GetGame().IsServer() && GetCPConfig().removeAfterHarvest==true)
+		{
+			GetGame().GetCallQueue( CALL_CATEGORY_SYSTEM ).CallLater( RemovePlant, 10, true );
 		}	
 	}	
 	
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	// 
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	void clearSpamCheck(){
 		harvestingSpamCheck = false;
 	}	
 }
 
 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 modded class ActionPlantSeed: ActionSingleUseBase
 {
 	override void Process( ActionData action_data )
@@ -651,9 +485,7 @@ modded class ActionPlantSeed: ActionSingleUseBase
 };
 
 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 modded class ActionHarvestCrops: ActionInteractBase
 {
     
@@ -682,9 +514,7 @@ modded class ActionHarvestCrops: ActionInteractBase
 };
 
 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 modded class SeedPackBase
 {	
 	private int m_tobaccoSeed_count;		
@@ -704,9 +534,7 @@ modded class SeedPackBase
 	private int m_pumpkinSeed_count;		
 	
 
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	// 
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+	
 	override void EmptySeedPack( PlayerBase player )
 	{
 
